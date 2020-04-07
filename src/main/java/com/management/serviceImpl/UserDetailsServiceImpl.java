@@ -1,4 +1,4 @@
-package com.management.impl;
+package com.management.serviceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
