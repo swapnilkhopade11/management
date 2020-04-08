@@ -1,4 +1,17 @@
 1) while setup project change application property change value 'create' while first build then change value to 'update' again
 --> spring.jpa.hibernate.ddl-auto = create
-2) adding data
-insert into user(id, address, age, first_name, last_name, role) values(1, 'Dombivali', 31, 'swapnil', 'khopade', 'admin');
+2) create database and table and adding data
+
+create database management;
+
+DROP TABLE IF EXISTS TBL_EMPLOYEES;
+ 
+CREATE TABLE TBL_EMPLOYEES (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  first_name VARCHAR(250) NOT NULL,
+  last_name VARCHAR(250) NOT NULL,
+  email VARCHAR(250) DEFAULT NULL
+);
+
+
+INSERT INTO TBL_EMPLOYEES (first_name, last_name, email) VALUES('Swapnil', 'Khopade', 'swapnilkhopade11@gmail.com');
